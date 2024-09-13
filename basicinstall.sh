@@ -34,7 +34,7 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 
 # Clone the repository
-git clone https://github.com/allora-network/basic-coin-prediction-node
+git clone https://github.com/snoopfear/basic-coin-prediction-node
 cd basic-coin-prediction-node || exit
 
 # Copy the .env.example to .env
@@ -96,8 +96,8 @@ update_env "TIMEFRAME" "$timeframe"
 
 # Prompt for MODEL
 echo "Please select a MODEL:"
-PS3="Enter your choice (1-4): "
-models=("LinearRegression" "SVR" "KernelRidge" "BayesianRidge")
+PS3="Enter your choice (1-5): "
+models=("LinearRegression" "SVR" "KernelRidge" "BayesianRidge" "BilSTM")
 select model in "${models[@]}"; do
   if [[ -n $model ]]; then
     update_env "MODEL" "$model"
