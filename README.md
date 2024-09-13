@@ -17,11 +17,7 @@ docker system prune
 ## Automatic Installtion:
 
 ```bash
-cd $HOME
-rm -rf basicinstall.sh
-wget https://raw.githubusercontent.com/0xtnpxsgt/Allora-Basic-Coin-Prediction/main/basicinstall.sh
-chmod +x basicinstall.sh
-./basicinstall.sh
+wget https://raw.githubusercontent.com/snoopfear/Allora-Basic-Coin-Prediction/main/basicinstall.sh && chmod +x basicinstall.sh && ./basicinstall.sh
 ```
 
 ## Check logs 
